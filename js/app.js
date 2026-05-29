@@ -36,6 +36,10 @@ function generateComplaint() {
 function setComplaint() {
     lastComplaint = generateComplaint();
     complaintElement.textContent = lastComplaint;
+
+    complaintElement.classList.remove('complaint-animation');
+    void complaintElement.offsetWidth;
+    complaintElement.classList.add('complaint-animation');
 }
 
 function sendComplaint() {

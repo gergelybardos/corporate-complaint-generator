@@ -70,6 +70,22 @@ h2 {
   padding: 16px 20px;
 }
 
+#complaint.complaint-animation {
+  animation: complaint-pop 0.35s ease-out;
+}
+
+@keyframes complaint-pop {
+  0% {
+    opacity: 0;
+    transform: translateY(8px) scale(0.98);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
 .row {
   display: grid;
   grid-template-columns: repeat(2, minmax(160px, 180px));
