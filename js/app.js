@@ -22,6 +22,7 @@ function generateComplaint() {
     const templates = [
         `${employee}'s ${employeeTrait} is ${negativeQualifier} ${discourseMarker}!`,
         `${discourseMarker}, ${employee}'s ${actionVerb} ${workplaceSituation} is ${negativeQualifier}!`,
+        `${employee} ${incapacityReason} ${responsibility}!`,
     ];
 
     const sentence =
