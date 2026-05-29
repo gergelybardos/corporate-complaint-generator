@@ -4,6 +4,8 @@
 
 The Corporate Complaint Generator is a lightweight, satirical mini-project designed to generate exaggerated grievances for the modern, over-caffeinated office worker. No frameworks, no build tools, no dependencies. Just a silly weekend adventure created to experiment with procedural text generation.
 
+Try it online: https://gergelybardos.github.io/corporate-complaint-generator/
+
 ## Features
 
 - Random sentence generation
