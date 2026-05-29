@@ -1,0 +1,118 @@
+:root {
+  --bg: #F5F9FA;
+  --text: #1B2026;
+  --muted: #72898f;
+
+  --primary: #00B6DE;
+  --primary-hover: #4EDFFF;
+  --button-text: #000;
+
+  --footer-bg: #1B2026;
+  --footer-text: #FFFFFF;
+
+  --surface: #FFFFFF;
+  --accent: #4EDFFF;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+header {
+  padding: 16px;
+  background: var(--surface);
+  text-align: center;
+}
+
+main {
+  flex: 1;
+  max-width: 800px;
+  margin: 48px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+h1, h2 {
+  font-family: "Segoe UI Semibold", "Segoe UI", system-ui, sans-serif;
+}
+
+h1 {
+  margin: 0;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+}
+
+h2 {
+  font-size: 22px;
+  font-weight: 400;
+  margin-bottom: 24px;
+  letter-spacing: -0.01em;
+  opacity: 0.75;
+}
+
+#complaint {
+  font-size: 26px;
+  line-height: 1.5;
+  color: var(--muted);
+  min-height: 140px;
+  max-width: 720px;
+  margin: 40px auto;
+  padding: 16px 20px;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(160px, 180px));
+  justify-content: center;
+  gap: 16px;
+}
+
+button {
+  background-color: var(--primary);
+  border: none;
+  border-radius: 10px;
+  color: var(--button-text);
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 12px 18px;
+  transition: background-color 0.2s ease, transform 0.08s ease;
+  font-family: inherit;
+  letter-spacing: 0.01em;
+}
+
+button:hover {
+  background-color: var(--primary-hover);
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+footer {
+  margin-top: auto;
+  padding: 20px;
+  background: var(--footer-bg);
+  color: var(--footer-text);
+  text-align: center;
+}
+
+footer a {
+  color: var(--accent);
+  text-decoration: none;
+  display: inline-block;
+}
+
+footer p {
+  margin: 0 0 8px 0;
+}
